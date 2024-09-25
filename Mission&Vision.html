@@ -53,7 +53,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            cursor: pointer;
+            cursor: pointttter;
             border: 2px solid #333;
             border-radius: 5px;
             padding: 5px;
@@ -90,7 +90,7 @@
 
 .responsive-img {
     max-width: 100%; /* Ensure image scales down to fit container */
-    height: auto;    /* Maintain aspect ratio */
+    height: auto;    /* Mainttttain aspect ratio */
 }
        
         .mainContainer{
@@ -99,18 +99,18 @@
             justify-content: center;
         }
 
-        .int, .int2 {
+        .intttt, .intttt2 {
             padding: 10px;
         }
 
-        .int2{
+        .intttt2{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             /* border: 3px solid black; */
         }
-        .int img {
+        .intttt img {
             max-width: 100%;
             height: auto;
         }
@@ -120,7 +120,7 @@
             margin: 0;
         }
 
-        .int2 b {
+        .intttt2 b {
             font-size: 1em;
             color: blue;
         }
@@ -131,11 +131,11 @@
                 text-align: center;
             }
 
-            .int2 h5 {
+            .intttt2 h5 {
                 font-size: 1em;
             }
 
-            .int2 b {
+            .intttt2 b {
                 font-size: 0.9em;
             }
         }
@@ -145,11 +145,11 @@
                 font-size: 1em;
             }
 
-            .int2 b {
+            .intttt2 b {
                 font-size: 0.8em;
             }
 
-            .int img {
+            .intttt img {
                 width: 70px;
                 height: 70px;
             }
@@ -184,7 +184,7 @@
     .thumbnail {
         width: 100px; /* Adjust as needed */
         height: auto;
-        cursor: pointer;
+        cursor: pointttter;
     }
     
     .thumbnail.active {
@@ -235,7 +235,74 @@
             flex: 1 1 100%; /* Stack cards vertically on very small screens */
         }
     }
+    
     </style>
+
+<style>
+    /* General Styles */
+.container {
+    max-width: 1200px; /* Limits the width of the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 15px; /* Adds padding */
+}
+
+/* Row Style */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    margin: 0 -15px; /* Negative margin to counter column padding */
+}
+
+/* Column Style */
+.col {
+    flex: 1 0 100%; /* Default: Full width */
+    padding: 15px; /* Adds padding between columns */
+}
+
+/* Section Title Style */
+.section-title {
+    color: darkred;
+    margin-bottom: 10px; /* Space below the title */
+    font-size: 1.5em; /* Default font size */
+}
+
+/* List Styles */
+.fox-list {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    text-align: left; /* Left-aligns the text */
+}
+
+.fox {
+    margin-bottom: 10px; /* Adds space between list items */
+    font-size: 1em; /* Default font size */
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    .col {
+        flex: 0 0 48%; /* Two columns on medium screens */
+        margin: 1%; /* Adds space between columns */
+    }
+}
+
+@media (min-width: 992px) {
+    .col {
+        flex: 0 0 30%; /* Three columns on large screens */
+        margin: 1.5%; /* Adds space between columns */
+    }
+
+    .section-title {
+        font-size: 1.75em; /* Increases the font size */
+    }
+
+    .fox {
+        font-size: 1.1em; /* Increases the font size */
+    }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -249,10 +316,10 @@
 
     <div class="both " style="border-top: 5px solid orange; background-color: rgb(255, 255, 255);">
        
-        <div class="int "> 
+        <div class="intttt "> 
             <img src="./img/Badge.png" class="responsive-img" >
         </div>
-        <div class="int2">
+        <div class="intttt2">
             <a href="index.html" class="">
                 <center><h5 class="tito" style=" font-size: 2.92vw;font-weight: bold; color:darkred; font-family: Rockwell Extra Bold;" >ST. JOHN PAUL II VOC & HIGH SCH MBALALA-MUKONO.</h5></center>
                <center><b style="font-size: 1.5vw; color: blue;">YOUR SUCCESS BEGINS HERE.</b></center>
@@ -366,41 +433,42 @@
     <div>
         <div class="container">
             <div class="row">
-              <div class="col align-self-start">
-                <h3 style="color: darkred;"><b>Objectives</b></h3>
-                <ul style="list-style: none; text-align: left;">
-                  <li class="fox">To provide high-quality education which is affordable to all Ugandans.</li>
-                  <li class="fox">To provide a suitable and conducive environment for learning.</li>
-                  <li class="fox">To tap and nurture talents.</li>
-                  <li class="fox">To provide students with Vocational Skills.</li>
-                  <li class="fox">To instill a sense of self-discipline, responsibility, and harmonious co-existence.</li>
-                  <li class="fox">To produce morally upright God-fearing citizens.</li>
-                </ul>
-              </div>
-              <div class="col align-self-center">
-                <h3 style="color: darkred;"><b>Mission</b></h3>
-                <p class="fox" style="text-align: left;">To be a leading institution in providing a holistic all-around<br> education by nurturing students'
-                    intellectual competencies, discovering talents, and bringing up creative citizens with a moral
-                    sense of social responsibility.</p>
-                <h3 style="color: darkred;"><b>Vision</b></h3>
-                <p class="fox" style="text-align: left;">To provide a holistic all-round education for the Highest Value.</p>
-              </div>
-              <div class="col align-self-end">
-                <h3 style="color: darkred;"><b>Core Values</b></h3>
-                <ul style="list-style: none; text-align: left;">
-                  <li class="fox">Team Work</li>
-                  <li class="fox">Customer care orientedness</li>
-                  <li class="fox">Value Addition</li>
-                  <li class="fox">Result Oriented</li>
-                  <li class="fox">Creativity</li>
-                  <li class="fox">Integrity</li>
-                  <li class="fox">Discipline</li>
-                  <li class="fox">God Fearing</li>
-                </ul>
-              </div>
+                <div class="col align-self-start">
+                    <h3 class="section-title"><b>Objectives</b></h3>
+                    <ul class="fox-list">
+                        <li class="fox">To provide high-quality education which is affordable to all Ugandans.</li>
+                        <li class="fox">To provide a suitable and conducive environment for learning.</li>
+                        <li class="fox">To tap and nurture talents.</li>
+                        <li class="fox">To provide students with Vocational Skills.</li>
+                        <li class="fox">To instill a sense of self-discipline, responsibility, and harmonious co-existence.</li>
+                        <li class="fox">To produce morally upright God-fearing citizens.</li>
+                    </ul>
+                </div>
+                <div class="col align-self-center">
+                    <h3 class="section-title"><b>Mission</b></h3>
+                    <p class="fox">To be a leading institution in providing a holistic all-around education by nurturing students'
+                        intellectual competencies, discovering talents, and bringing up creative citizens with a moral
+                        sense of social responsibility.</p>
+                    <h3 class="section-title"><b>Vision</b></h3>
+                    <p class="fox">To provide a holistic all-round education for the Highest Value.</p>
+                </div>
+                <div class="col align-self-end">
+                    <h3 class="section-title"><b>Core Values</b></h3>
+                    <ul class="fox-list">
+                        <li class="fox">Team Work</li>
+                        <li class="fox">Customer care orientedness</li>
+                        <li class="fox">Value Addition</li>
+                        <li class="fox">Result Oriented</li>
+                        <li class="fox">Creativity</li>
+                        <li class="fox">Integrity</li>
+                        <li class="fox">Discipline</li>
+                        <li class="fox">God Fearing</li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
+    
 
 </center>
 <center>
@@ -478,7 +546,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-3">Newsletter</h4>
-                <p style="font-size: 15px; font-weight: bolder;">At ST. JOHN PAUL II VOC & HIGH SCH MBALALA-MUKONO, we are always excited to welcome new families into our community. 
+                <p style="font-size: 15px; font-weight: bolder;">At ST. JOHN PAUL II VOC & HIGH SCH MBALALA-MUKONO, we are always excited to welcome new families intttto our community. 
                     The best way to get to know us is to arrange a visit or reach out to us through Email or Contact.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
@@ -519,7 +587,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/waypointttts/waypointttts.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
