@@ -236,6 +236,68 @@
             flex: 1 1 100%; /* Stack cards vertically on very small screens */
         }
     }
+
+    
+.prof {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns for laptops */
+    gap: 20px; /* Space between cards */
+    /* padding: 20px;  */
+    /* border:  2px solid red; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: white; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding inside cards */
+    /* border:  2px solid green; */
+    align-self: center;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+.card-image img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Mainttttain aspect ratio */
+    border-radius: 50%; /* Circular image */
+}
+
+.name {
+    font-weight: bold; /* Bold name */
+    margin: 10px 0; /* Space above and below the name */
+}
+
+.fox {
+    color: gray; /* Color for position text */
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1024px) { /* iPad and smaller screens */
+    .prof {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for iPads */
+    }
+}
+
+@media (max-width: 768px) { /* Smartphones */
+    .prof {
+        grid-template-columns: 1fr; /* 1 column for smartphones */
+    }
+}
+
+/* For smaller devices, add margins to the cards */
+@media (max-width: 576px) {
+    .responsive-card {
+      align-self: center;
+      justify-self: center;
+        margin-top: 100px;
+        /* border: 10px solid green; */
+    }
+}
     </style>
 </head>
 
@@ -505,86 +567,95 @@
    <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 1px;">
     <h1 class="mb-5" style="color: darkred;"><u>Board Members</u></h1>
 </div>
+
 <div class="prof">
-    <div class="card">
+    <div class="card responsive-card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/PMJnTQ7/fr-maviiri.jpg" alt="fr-maviiri" border="0"></a>
         </div>
-        <p class="name"> Rev. Fr. Prof. J.C. Maviiri </p>
+        <div style="margin-top: 25%;">
+            <p class="name">Rev. Fr. Prof. J.C. Maviiri</p>
         <small class="fox">Chairman Board Of Governors.</small>
+        </div>
+        
     </div>
-    <br><br><br>
-    <div class="card">
+
+    <div class="card responsive-card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/ncZy1jb/ccta.jpg" alt="ccta" border="0"></a>
         </div>
-        <p class="name">Sr. Dr.Marie. G. Nakitende</p>
-        <small class="fox" style="margin-right: 200px;">Director</small>
+        <div style="margin-top: 25%;">
+            <p class="name">Sr. Dr. Marie. G. Nakitende</p>
+            <small class="fox">Director</small>
+        </div>
     </div>
-    <br><br><br>
-    <div class="card">
+    <br> <br> <br> <br> 
+    <div class="card responsive-card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/Wx1sBQ1/mr-alex.jpg" alt="mr-alex" border="0"></a>
         </div>
-        <p class="name">Mr. Muheesi Alex Gerald</p>
-        <small class="fox" style="margin-right: 90px;">Chief Finance Officer</small>
-    </div>
-</div>
-<br><br><br>
-   <div class="prof">
-    <div class="card">
-        <div class="card-image">
-            <a><img src="https://i.ibb.co/b2zHFn2/avator.jpg" alt="avator" border="0"></a>
+        <div style="margin-top: 25%;">
+            <p class="name">Mr. Muheesi Alex Gerald</p>
+        <small class="fox">Chief Finance Officer</small>
         </div>
-        <p class="name">Sr. Rose Agnes Ndabikoba</p>
-        <small class="fox">Member.</small>
+        
     </div>
-    <br><br><br>
-    <div class="card">
+    
+    <div class="card responsive-card" style="margin-bottom: 10%;">
         <div class="card-image">
-            <a><img src="https://i.ibb.co/b2zHFn2/avator.jpg" alt="avator" border="0"></a>
+            <a><img src="https://i.ibb.co/gmNN1LV/lawyer.jpg" alt="lawyer" border="0"></a>
         </div>
-        <p class="name">Sr. Mary Monica Nabirye</p>
-        <small class="fox">Member.</small>
+        <div style="margin-top: 25%;">
+            <p class="name">Sir Robinson Wamani</p>
+        <small class="fox">School Lawyer.</small>
+        </div>
+        
     </div>
-    <br><br><br>
-    <div class="card">
+    
+    <div class="card responsive-card" style="margin-bottom: 10%;">
         <div class="card-image">
-            <a><img src="https://i.ibb.co/6NXhS7x/kayiwa.jpg" alt="kayiwa" border="0" style="object-fit: cover;"></a>
+            <a><img src="https://i.ibb.co/MNS9S8f/ssebagala.jpg" alt="ssebagala" border="0"></a>
         </div>
+        <div style="margin-top: 25%;">
+            <p class="name">Mr. Ssebagala Cyprian</p>
+            <small class="fox">Chairman Academics & Staff Welfare</small>
+        </div>
+       
+    </div>
+   
+    <div class="card responsive-card" style="margin-bottom: 10%;">
+        <div class="card-image">
+            <a><img src="https://i.ibb.co/6NXhS7x/kayiwa.jpg" alt="kayiwa" border="0"></a>
+        </div>
+      <div style="margin-top: 25%;">
         <p class="name">Mr. Kayiwa Ntale Henry</p>
         <small class="fox">Chairman PTA.</small>
+      </div>
     </div>
-    
+     
+    <div class="card responsive-card" style="margin-bottom: 10%;">
+        <div class="card-image">
+            <a><img src="https://i.ibb.co/b2zHFn2/avator.jpg" alt="avator" border="0"></a>
+        </div>
+        <div style="margin-top: 25%;">
+            <p class="name">Sr. Rose Agnes Ndabikoba</p>
+        <small class="fox">Member.</small>
+        </div>
+    </div>
+     
+    <div class="card responsive-card" style="margin-bottom: 10%;">
+        <div class="card-image">
+            <a><img src="https://i.ibb.co/b2zHFn2/avator.jpg" alt="avator" border="0"></a>
+        </div>
+       <div style="margin-top: 25%;">
+        <p class="name">Sr. Mary Monica Nabirye</p>
+        <small class="fox">Member.</small>
+       </div>
+    </div>
 </div>
+
 <!---Start profile-->
-    
-<div class="prof">
-    <div class="card">
-        <div class="card-image">
-            <a><img src="https://i.ibb.co/0fLGZM2/hm.jpg" alt="hm" border="0"></a>
-        </div>
-        <p class="name">Mr.Joab Wakuma </p>
-        <small class="fox">Headteacher</small>
-    </div>
 
-    <div class="card">
-        <div class="card-image">
-            <a><img src="https://i.ibb.co/sV7sdF4/dhm.jpg" alt="dhm" border="0"></a>
-        </div>
-        <p class="name">Mrs. Baraza Joan </p>
-        <small class="fox">Deputy Headteacher</small>
-    </div>
-
-    <div class="card">
-        <div class="card-image">
-            <a><img src="https://i.ibb.co/cvXkbZg/dos.jpg" alt="dos" border="0"></a>
-        </div>
-        <p class="name">Mr.Oketch Micheal </p>
-        <small class="fox">Director Of Studies</small>
-    </div>
-</div>
-   <!---End profile-->
 
        
    <div>
