@@ -313,8 +313,9 @@ body {
     grid-template-columns: repeat(3, 1fr); /* Default to 3 columns for laptops */
     gap: 20px; /* Space between cards */
     /* padding: 20px;  */
-    /* border:  2px solid red; */
+    border:  2px solid red;
     align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -357,8 +358,8 @@ body {
 /* For smaller devices, add margins to the cards */
 @media (max-width: 576px) {
     .responsive-card {
-        margin-left: 15px;
-        margin-right: 15px;
+      align-self: center;
+      justify-self: center;
         margin-top: 100px;
         /* border: 10px solid green; */
     }
